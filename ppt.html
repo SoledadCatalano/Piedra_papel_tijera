@@ -15,14 +15,28 @@ var valorMaquina = "piedra"
 if ((valorElegido != valorMaquina) && (valorElegido !="papel") &&(valorElegido !="tijera")){
     alert ("Error, debe elegir piedra, papel o tijera")
 }
-else if (valorElegido==valorMaquina){
+else if (valorElegido===valorMaquina){
     alert ("Empate")
 }
-else if (valorElegido=="papel"){
+else if (valorElegido ==="papel" && valorMaquina==="piedra"){
     alert ("Usted Gano")
 }
+else if (valorElegido==="tijera"&& valorMaquina==="papel"){
+    alert("Usted Gano")
+}
+else if (valorElegido==="piedra"&& valorMaquina==="tijera"){
+    alert("Usted Gano") 
+}
 
-else{
+else if (valorElegido==="papel" && valorMaquina==="tijera"){
+alert("Usted Perdio, el mio es "+ valorMaquina)
+}
+
+else if (valorElegido==="tijera" && valorMaquina==="piedra"){
+alert("Usted Perdio, el mio es "+ valorMaquina)
+}
+
+else if (valorElegido==="piedra" && valorMaquina==="papel"){
 alert("Usted Perdio, el mio es "+ valorMaquina)
 }
     </script>    
