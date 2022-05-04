@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//condicionales
+var valorElegido = prompt ("Elige piedra, papel o tijera")
+var valorMaquina = "piedra"
+
+if ((valorElegido != valorMaquina) && (valorElegido !="papel") &&(valorElegido !="tijera")){
+    alert ("Error, debe elegir piedra, papel o tijera")
+}
+else if (valorElegido==valorMaquina){
+    alert ("Empate")
+}
+else if (valorElegido=="papel"){
+    alert ("Usted Gano")
+}
+
+else{
+alert("Usted Perdio, el mio es"+ valorMaquina)
+}
+    </script>    
+</body>
+</html>
